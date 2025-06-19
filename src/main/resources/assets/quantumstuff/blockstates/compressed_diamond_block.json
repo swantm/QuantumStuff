@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "quantumstuff:block/compressed_diamond_block"
+    }
+  }
+}

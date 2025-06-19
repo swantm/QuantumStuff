@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "tools",
+  "key": {
+    "Q": {
+      "item": "quantumstuff:quantumingot"
+    },
+    "N": {
+      "item": "minecraft:nether_star"
+    },
+    "R": {
+      "item": "quantumstuff:quantumrod"
+    }
+  },
+  "pattern": [
+    "NQN",
+    " R ",
+    " R "
+  ],
+  "result": {
+    "count": 1,
+    "id": "quantumstuff:quantum_shovel"
+  }
+}

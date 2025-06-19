@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "N": {
+      "item": "quantumstuff:nether_star_block"
+    },
+    "Q": {
+      "item": "quantumstuff:quantumingot"
+    },
+    "B": {
+      "item": "minecraft:netherite_block"
+    }
+  },
+  "pattern": [
+    "NQN",
+    "QBQ",
+    "NQN"
+  ],
+  "result": {
+    "count": 1,
+    "id": "quantumstuff:quantum_block"
+  }
+}

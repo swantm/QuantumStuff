@@ -1,0 +1,10 @@
+{
+  "silent": {
+    "sounds": [
+      {
+        "name": "quantumstuff:silent",
+        "stream": true
+      }
+    ]
+  }
+}

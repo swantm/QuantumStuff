@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "quantumstuff:nether_star_block",
+    "quantumstuff:compressed_diamond_block",
+    "quantumstuff:quantum_block"
+  ]
+}

@@ -13,7 +13,12 @@ import net.minecraftforge.fml.config.ModConfig;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.swan.quantumstuff.block.ModBlocks;
+import net.swan.quantumstuff.effect.ModEffects;
+import net.swan.quantumstuff.item.ModCreativeModeTabs;
 import net.swan.quantumstuff.item.ModItems;
+import net.swan.quantumstuff.potion.ModPotions;
+import net.swan.quantumstuff.sound.ModSounds;
 import org.slf4j.Logger;
 
 // The value here should match an entry in the META-INF/mods.toml file
@@ -32,7 +37,14 @@ public class QuantumStuff {
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
 
+        ModCreativeModeTabs.register(modEventBus);
+
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
+
+        ModEffects.register(modEventBus);
+        ModPotions.register(modEventBus);
+        ModSounds.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
@@ -50,7 +62,31 @@ public class QuantumStuff {
          if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
              event.accept(ModItems.QUANTUMINGOT);
              event.accept(ModItems.QUANTUMROD);
+             event.accept(ModItems.THOUSANDDOLLARWALLET);
+             event.accept(ModItems.NOISECOIN);
          }
+
+         if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
+             event.accept(ModBlocks.QUANTUM_BLOCK);
+             event.accept(ModBlocks.NETHER_STAR_BLOCK);
+             event.accept(ModBlocks.COMPRESSED_DIAMOND_BLOCK);
+         }
+
+        if(event.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
+            event.accept(ModItems.QUANTUM_PICKAXE);
+            event.accept(ModItems.QUANTUM_AXE);
+            event.accept(ModItems.QUANTUM_SHOVEL);
+            event.accept(ModItems.QUANTUM_HOE);
+        }
+
+        if(event.getTabKey() == CreativeModeTabs.COMBAT) {
+            event.accept(ModItems.QUANTUM_SWORD);
+            event.accept(ModItems.QUANTUM_HELMET);
+            event.accept(ModItems.QUANTUM_CHESTPLATE);
+            event.accept(ModItems.QUANTUM_LEGGINGS);
+            event.accept(ModItems.QUANTUM_BOOTS);
+            event.accept(ModItems.QUANTUM_BOW);
+        }
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call

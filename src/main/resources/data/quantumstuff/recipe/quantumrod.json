@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "S": {
+      "item": "minecraft:nether_star"
+    },
+    "Q": {
+      "item": "quantumstuff:quantumingot"
+    }
+  },
+  "pattern": [
+    "S",
+    "Q",
+    "S"
+  ],
+  "result": {
+    "count": 1,
+    "id": "quantumstuff:quantumrod"
+  }
+}

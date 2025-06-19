@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "Q": {
+      "item": "quantumstuff:quantumingot"
+    },
+    "N": {
+      "item": "minecraft:nether_star"
+    },
+    "A": {
+      "item": "minecraft:enchanted_golden_apple"
+    }
+  },
+  "pattern": [
+    "NQN",
+    "QAQ",
+    "NQN"
+  ],
+  "result": {
+    "count": 1,
+    "id": "quantumstuff:quantum_apple"
+  }
+}

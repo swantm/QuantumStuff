@@ -1,0 +1,6 @@
+{
+  "parent": "quantumstuff:item/quantum_bow",
+  "textures": {
+    "layer0": "quantumstuff:item/quantum_bow_pulling_0"
+  }
+}

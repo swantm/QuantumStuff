@@ -1,4 +1,46 @@
 {
   "item.quantumstuff.quantumingot": "Quantum Ingot",
-  "item.quantumstuff.quantumrod": "Quantum Rod"
+  "item.quantumstuff.quantumrod": "Quantum Rod",
+  "item.quantumstuff.thousanddollarwallet": "Thousand Dollar Wallet",
+  "item.quantumstuff.noisecoin": "Coin",
+
+  "block.quantumstuff.quantum_block": "Quantum Block",
+  "block.quantumstuff.nether_star_block": "Nether Star Block",
+  "block.quantumstuff.compressed_diamond_block": "Compressed Diamond Block",
+
+  "item.quantumstuff.quantum_sword": "Quantum Sword",
+  "item.quantumstuff.quantum_pickaxe": "Quantum Pickaxe",
+  "item.quantumstuff.quantum_axe": "Quantum Axe",
+  "item.quantumstuff.quantum_shovel": "Quantum Shovel",
+  "item.quantumstuff.quantum_hoe": "Quantum Hoe",
+  "item.quantumstuff.quantum_bow": "Quantum Bow",
+
+  "item.quantumstuff.quantum_helmet": "Quantum Helmet",
+  "item.quantumstuff.quantum_chestplate": "Quantum Chestplate",
+  "item.quantumstuff.quantum_leggings": "Quantum Leggings",
+  "item.quantumstuff.quantum_boots": "Quantum Boots",
+
+  "item.quantumstuff.emerald_carrot": "Emerald Carrot",
+  "item.quantumstuff.quantum_apple": "Quantum Apple",
+
+  "effect.quantumstuff.invincibility": "Invincibility",
+
+  "item.quantumstuff.silent_music_disc": "Silent Music Disc",
+  "item.quantumstuff.silent_music_disc.desc": "Aktar Khan - Silent",
+
+  "item.minecraft.potion.effect.invincibility_potion": "Invincibility Potion",
+  "item.minecraft.splash_potion.effect.invincibility_potion": "Invincibility Splash Potion",
+  "item.minecraft.lingering_potion.effect.invincibility_potion": "Invincibility Lingering Potion",
+
+  "creativetab.quantumstuff.quantumstuff_items": "Quantum Stuff",
+
+  "tooltip.quantumstuff.thousanddollarwallet": "§8§oit always stays silent",
+  "tooltip.quantumstuff.noisecoin": "§8§oit makes noise",
+
+  "tooltip.quantumstuff.quantum_sword": "§5§oForged from pure quantum essence.",
+  "tooltip.quantumstuff.quantum_pickaxe": "§5§oQuantum Drill Machine.",
+  "tooltip.quantumstuff.quantum_axe": "§5§oHeavy Hitter and Chopper."
+
+
+
 }

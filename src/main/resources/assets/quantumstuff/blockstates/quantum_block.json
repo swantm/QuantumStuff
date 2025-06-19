@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "quantumstuff:block/quantum_block"
+    }
+  }
+}

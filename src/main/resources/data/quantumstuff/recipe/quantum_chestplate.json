@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "Q": {
+      "item": "quantumstuff:quantumingot"
+    },
+    "B": {
+      "item": "quantumstuff:quantum_block"
+    }
+  },
+  "pattern": [
+    "Q Q",
+    "QBQ",
+    "QQQ"
+  ],
+  "result": {
+    "count": 1,
+    "id": "quantumstuff:quantum_chestplate"
+  }
+}
