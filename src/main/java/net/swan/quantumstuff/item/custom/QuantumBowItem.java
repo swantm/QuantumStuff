@@ -19,7 +19,9 @@ import java.util.List;
 public class QuantumBowItem extends BowItem {
     public QuantumBowItem(Properties properties) {
         super(properties);
+
     }
+
 
     @Override
     public void releaseUsing(ItemStack stack, Level level, LivingEntity entity, int timeLeft) {
