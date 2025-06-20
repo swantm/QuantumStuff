@@ -15,4 +15,6 @@ public class ModToolTiers {
             () -> Ingredient.of(ModItems.QUANTUMINGOT.get()),
             ModTags.Blocks.INCORRECT_FOR_QUANTUM_TOOL
     );
+
+
 }

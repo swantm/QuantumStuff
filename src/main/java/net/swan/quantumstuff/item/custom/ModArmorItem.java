@@ -1,6 +1,9 @@
 package net.swan.quantumstuff.item.custom;
 
 import com.google.common.collect.ImmutableMap;
+import net.minecraft.core.registries.Registries;
+import net.minecraft.world.item.enchantment.Enchantment;
+import net.minecraft.world.item.enchantment.Enchantments;
 import net.swan.quantumstuff.item.ModArmorMaterials;
 import net.minecraft.core.Holder;
 import net.minecraft.world.effect.MobEffectInstance;
@@ -26,8 +29,22 @@ public class ModArmorItem extends ArmorItem {
                                     new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 200, 3, false, false), // Resistance IV
                                     new MobEffectInstance(MobEffects.NIGHT_VISION, 220, 0, false, false),
                                     new MobEffectInstance(MobEffects.REGENERATION, 200, 0, false, false) // Regeneration I
+
                             ))
                     .build();
+
+    @Override
+    public void onCraftedBy(ItemStack stack, Level level, Player player) {
+        super.onCraftedBy(stack, level, player);
+
+        if (!stack.isEnchanted()) {
+            Holder<Enchantment> unbreaking = level.registryAccess()
+                    .registryOrThrow(Registries.ENCHANTMENT)
+                    .getHolderOrThrow(Enchantments.UNBREAKING);
+
+            stack.enchant(unbreaking, 10); // Unbreaking X
+        }
+    }
 
     public ModArmorItem(Holder<ArmorMaterial> material, Type type, Properties properties) {
         super(material, type, properties);
